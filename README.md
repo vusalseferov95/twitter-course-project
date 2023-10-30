@@ -10,3 +10,5 @@ In this course, I gained a lot of information including "Html", "Css", "Javacsri
 Thank you for everything...
 
 You can check out my Twitter course project by clicking this link>>>
+
+vusalseferov-developia-course-project.netlify.app
