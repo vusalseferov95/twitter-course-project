@@ -1,32 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter</title>
-    <link rel="stylesheet" href="ASSETS/CSS/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home / X</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body class="dark">
-    <div class="grid-container">
+  <main class="container">
+    <footer class="mobile-navbar">
+      <a href="#" class="link">
+        <span class="link-content">
+          <i class="icon icon-home"></i>
+        </span>
+      </a>
+      <a href="#" class="link">
+        <span class="link-content">
+          <i class="icon icon-search"></i>
+        </span>
+      </a>
+      <a href="#" class="link">
+        <span class="link-content">
+          <i class="icon icon-notification"></i>
+          <span class="count">3</span>
+        </span>
+      </a>
+      <a href="#" class="link">
+        <span class="link-content">
+          <i class="icon icon-message"></i>
+        </span>
+      </a>
+    </footer>
 
-        <div class="grid-item page-left">
-            <div>
-                <nav>navbar</nav>
-            </div>
-            <div>
-                <button>Tweet</button>
-            </div>
-            <div>
-                profile
-            </div>
+    <aside class="page-left">
+      <div>
+        <div>
+          <a href="#" class="logo">
+            <img src="./assets/icons/twitterx.svg" alt="" class="icon img-cover" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <a href="#" class="navbar-link">
+            <span class="navbar-icon">
+              <i class="icon icon-home"></i>
+            </span>
+            <span class="navbar-text">Home</span>
+          </a>
+          <a href="#" class="navbar-link">
+            <span class="navbar-icon">
+              <i class="icon icon-explore"></i>
+            </span>
+            <span class="navbar-text">Explore</span>
+          </a>
+          <a href="#" class="navbar-link">
+            <span class="navbar-icon">
+              <i class="icon icon-notification"></i>
+            </span>
+            <span class="navbar-text">Notifications</span>
+          </a>
+          <a href="#" class="navbar-link">
+            <span class="navbar-icon">
+              <i class="icon icon-message"></i>
+            </span>
+            <span class="navbar-text">Messages</span>
+          </a>
+          <a href="#" class="navbar-link">
+            <span class="navbar-icon">
+              <i class="icon icon-bookmark"></i>
+            </span>
+            <span class="navbar-text">Bookmarks</span>
+          </a>
+          <a href="#" class="navbar-link">
+            <span class="navbar-icon">
+              <i class="icon icon-list"></i>
+            </span>
+            <span class="navbar-text">Lists</span>
+          </a>
+          <a href="#" class="navbar-link">
+            <span class="navbar-icon">
+              <i class="icon icon-premium"></i>
+            </span>
+            <span class="navbar-text">Premium</span>
+          </a>
+          <a href="#" class="navbar-link">
+            <span class="navbar-icon">
+              <i class="icon icon-profile"></i>
+            </span>
+            <span class="navbar-text">Profile</span>
+          </a>
+          <a href="#" class="navbar-link">
+            <span class="navbar-icon">
+              <i class="icon icon-more"></i>
+            </span>
+            <span class="navbar-text">More</span>
+          </a>
+        </nav>
+        <div class="page-left-buttons">
+          <button class="btn btn-primary btn-lg btn-block">
+            <span class="plus">+</span>
+            <span class="text">Post</span>
+          </button>
+        </div>
+      </div>
 
+      <div class="profile">
+        <div class="avatar">
+          <img src="./assets/images/vs-profile.jpeg" class="img-cover" alt="" />
+        </div>
+        <div class="text">
+          <p>
+            <span>Vusal Safarov</span>
+            <span>
+              <i class="icon icon-lock"></i>
+            </span>
+          </p>
+          <p>@vusalseferov001</p>
+        </div>
+        <div class="more">
+          <i class="icon icon-ellipse-v"></i>
+        </div>
+      </div>
+    </aside>
+
+    <section class="page-content">
+      <header class="flex p-16px justify-between items-center border-b border-gray">
+        <div class="flex items-center justify-between flex-1">
+          <span class="font-semibold text-xl">For You</span>
+          <span class="font-semibold text-xl">Following</span>
+          <button class="btn">
+            <i class="icon icon-timeline"></i>
+          </button>
         </div>
 
-        <div class="grid-item page-content">2</div>
+      </header>
 
-        <div class="grid-item page-right ">3</div>
-
+      <div class="flex pl-16px pt-12px pr-12px border-b border-gray pb-4px">
+        <div class="avatar mr-12px">
+          <img src="./assets/images/vs-profile.jpeg" class="img-cover" alt="" />
+        </div>
+        <div class="flex-1">
+          <div contenteditable="true" class="html-editor mb-24px">
+            <span>What’s happening?</span>
+          </div>
+          <div class="flex justify-between">
+            <div class="flex items-center">
+              <button class="btn btn-action">
+                <i class="icon icon-media"></i>
+              </button>
+              <button class="btn btn-action">
+                <i class="icon icon-gif"></i>
+              </button>
+              <button class="btn btn-action">
+                <i class="icon icon-poll"></i>
+              </button>
+              <button class="btn btn-action">
+                <i class="icon icon-emoji"></i>
+              </button>
+              <button class="btn btn-action">
+                <i class="icon icon-schedule"></i>
+              </button>
+            </div>
+            <div>
+              <button class="btn btn-primary">Post</button>
+            </div>
+          </div>
+        </div>
       </div>
-    
+
+      <section>
+        <article class="tweet-item">
+          <div class="avatar">
+            <img src="./assets/images/gs-logo.jpeg" class="img-cover" alt="" />
+          </div>
+          <div class="inner">
+            <h5 class="tweet-title">
+              <span class="name">Galatasaray SK</span>
+              <i class="icon icon-verified"></i>
+              <span class="text">@galatasaray</span>
+              <span class="text">2h</span>
+            </h5>
+            <div class="tweet-text">
+              <span>Düşler Sahnesi'nde başrol GALATASARAYIMIZIN! 🙌
+                <br>
+                Maç sonucu: Manchester United 2-3 Galatasaray 💪
+                <br>
+                #MUNvGS #UCL
+                <br>
+                #WeAreTheBestGALATASARAY 😎
+              </span>
+              <br>
+              <figure>
+                <img src="assets/images/MU-3-2 GS.jpeg" alt="" class="img-l">
+              </figure>
+            </div>
+            <div class="tweet-buttons">
+              <button class="tweet-button">
+                <i class="icon icon-reply"></i>
+                <span>5219</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-retweet"></i>
+                <span>848</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-react"></i>
+                <span>482</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-share"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="tweet-item">
+          <div class="avatar">
+            <img src="./assets/images/mod.jpeg" class="img-cover" alt="" />
+          </div>
+          <div class="inner">
+            <h5 class="tweet-title">
+              <span class="name">Azərbaycan Respublikası Müdafiə Nazirliyi</span>
+              <i class="icon icon-verified"></i>
+              <span class="text">@azerbaijan_mod</span>
+              <span class="text">3h</span>
+            </h5>
+            <p class="">Azərbaycan Respublikasının müdafiə naziri general-polkovnik Zakir Həsənov Türkiyə Cümhuriyyətinin
+              yaranmasının 100-cü ildönümü münasibətilə Türkiyə Respublikasının milli müdafiə naziri cənab Yaşar
+              Gülerə və Baş Qərargah rəisi ordu generalı Metin Güraka təbrik məktubu ünvanlayıb.
+              Məktubda deyilir: "Sizi, ailənizi və tabeliyinizdə olan şəxsi heyəti Cümhuriyyət Bayramının 100-cü
+              ildönümü münasibətilə ən səmimi diləklərimlə ürəkdən təbrik edir, Sizə cansağlığı, uzun ömür, ailə
+              səadəti, çətin və şərəfli işinizdə müvəffəqiyyət arzulayıram.
+              Mustafa Kamal Atatürk, silahdaşları və şanlı Türk ordusu ilə birlikdə bir milləti əsarətdən qurtararaq,
+              ardından da yepyeni bir ulus quraraq, 29 oktyabr 1923-cü ildə Türkiyə Respublikasını elan etdi. 1923-cü
+              ildən bəri müstəqillik yolunda Türkiyə Respublikası bütün çətinliklərə mərdliklə sinə gərdi. Müstəqillik
+              uğrunda döyüşlərdə Türk əsgərinin yenilməzliyini, Türk xalqının rəşadətini düşmənlər də öz xatirələrində
+              etiraf ediblər. İstiqlal Savaşında Türkiyə vətəndaşlarının göstərdiyi şücaətlər Türk tarixində qızıl
+              hərflərlə yazılmış, əfsanələr yaratmışdır.
+              Bir daha Sizi Cümhuriyyət Bayramının 100-cü ildönümü münasibətilə səmimi qəlbdən təbrik edir,
+              dövlətçilik və azadlıq uğrunda adını tarixə qızıl hərflərlə yazmış şəhidlərimizin müqəddəs xatirəsini
+              dərin ehtiramla anıram".</p>
+            <div>
+              <img src="assets/images/az-tr-flags.jpeg" alt="" class="img-xl">
+            </div>
+            <div class="tweet-buttons">
+              <button class="tweet-button">
+                <i class="icon icon-reply"></i>
+                <span>1958</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-retweet"></i>
+                <span>485</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-react"></i>
+                <span>48</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-share"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="tweet-item">
+          <div class="avatar">
+            <img src="./assets/images/Ilham_Aliyev_in_2023.jpg" class="img-cover" alt="" />
+          </div>
+          <div class="inner">
+            <h5 class="tweet-title">
+              <span class="name">İlham Əliyev</span>
+              <i class="icon icon-verified"></i>
+              <span class="text">@azpresident</span>
+              <span class="text">4h</span>
+            </h5>
+            <p></p>
+            <div>
+              <img src="assets/images/ilham-eliyev.jpeg" alt="" class="img-xl">
+            </div>
+            <div class="tweet-buttons">
+              <button class="tweet-button">
+                <i class="icon icon-reply"></i>
+                <span>9119</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-retweet"></i>
+                <span>859</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-react"></i>
+                <span>482</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-share"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="tweet-item">
+          <div class="avatar">
+            <img src="./assets/images/rte.jpeg" class="img-cover" alt="" />
+          </div>
+          <div class="inner">
+            <h5 class="tweet-title">
+              <span class="name">Reçep Tayyib Erdoğan</span>
+              <i class="icon icon-verified"></i>
+              <span class="text">@RTErdoğan</span>
+              <span class="text">5h</span>
+            </h5>
+            <div class="tweet-text">
+              <img src="assets/images/turkiye-cumhuriyeti-100-yasinda.jpeg" alt="" class="img-xl">
+            </div>
+            <div class="tweet-buttons">
+              <button class="tweet-button">
+                <i class="icon icon-reply"></i>
+                <span>7489</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-retweet"></i>
+                <span>9548</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-react"></i>
+                <span>482</span>
+              </button>
+              <button class="tweet-button">
+                <i class="icon icon-share"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <aside class="page-right">
+      <div>
+        <div class="search">
+          <span>
+            <i class="icon icon-search"></i>
+          </span>
+          <input type="text" placeholder="Search Twitter" />
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h4 class="card-title">Trends for you</h4>
+            <button class="btn">
+              <i class="icon icon-settings"></i>
+            </button>
+          </div>
+          <div class="card-body">
+            <div class="trend-item">
+              <div class="trend-item-inner">
+                <p class="text">Trending in Azerbaijan</p>
+                <p class="hashtag">#8noyabrZeferGunu</p>
+                <p class="text">4,076 Tweets</p>
+              </div>
+              <div class="trend-item-action">
+                <i class="icon icon-ellipse-v"></i>
+              </div>
+            </div>
+            <div class="trend-item">
+              <div class="trend-item-inner">
+                <p class="text">Trending in Azerbaijan</p>
+                <p class="hashtag">#KharabagIsAzerbaijan</p>
+                <p class="text">2,688 Tweets</p>
+              </div>
+              <div class="trend-item-action">
+                <i class="icon icon-ellipse-v"></i>
+              </div>
+            </div>
+            <div class="trend-item">
+              <div class="trend-item-inner">
+                <p class="text">Trending in Turkey</p>
+                <p class="hashtag">#29ekimCumhuriyyetBayramı</p>
+                <p class="text">12,566 Tweets</p>
+              </div>
+              <div class="trend-item-action">
+                <i class="icon icon-ellipse-v"></i>
+              </div>
+            </div>
+            <div class="trend-item">
+              <div class="trend-item-inner">
+                <p class="text">Trending in Turkey</p>
+                <p class="hashtag">#2023TurkiyeYuzYılı</p>
+                <p class="text">21,012 Tweets</p>
+              </div>
+              <div class="trend-item-action">
+                <i class="icon icon-ellipse-v"></i>
+              </div>
+            </div>
+            <div class="trend-item">
+              <div class="trend-item-inner">
+                <p class="text">Trending in Turkey</p>
+                <p class="hashtag">#ŞampiyonGalatasaray</p>
+                <p class="text">1,646 Tweets</p>
+              </div>
+              <div class="trend-item-action">
+                <i class="icon icon-ellipse-v"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-more">
+            <a href="#">Show more</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="card-title">Who to follow</div>
+          </div>
+          <div class="card-body">
+            <div class="follow-item">
+              <div class="avatar">
+                <img src="./assets/images/DSX.jpeg" class="img-cover" alt="" />
+              </div>
+              <div class="inner">
+                <div>
+                  <p class="name">
+                    <span>Dövlət Sərhəd Xidməti</span>
+                    <i class="icon icon-verified"></i>
+                  </p>
+                  <p class="text">@dsx.gov.az</p>
+                </div>
+                <div>
+                  <button class="btn btn-light">Follow</button>
+                </div>
+              </div>
+            </div>
+            <div class="follow-item">
+              <div class="avatar">
+                <img src="./assets/images/din.jpeg" class="img-cover" alt="" />
+              </div>
+              <div class="inner">
+                <div>
+                  <p class="name">
+                    <span>Daxili İşlər Nazirliyi</span>
+                    <i class="icon icon-verified"></i>
+                  </p>
+                  <p class="text">@polisazerbaycan</p>
+                </div>
+                <div>
+                  <button class="btn btn-light">Follow</button>
+                </div>
+              </div>
+            </div>
+            <div class="follow-item">
+              <div class="avatar">
+                <img src="./assets/images/qarabag.jpeg" class="img-cover" alt="" />
+              </div>
+              <div class="inner">
+                <div>
+                  <p class="name">
+                    <span>Qarabağ FK</span>
+                    <i class="icon icon-verified"></i>
+                  </p>FK_Qarabagh</p>
+                </div>
+                <div>
+                  <button class="btn btn-light">Follow</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-more">
+            <a href="#">Show More</a>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Imprint</a>
+          <a href="#">Ads info</a>
+          <a href="#">More ...</a>
+          <a href="#">© 2021 Twitter, Inc.</a>
+        </footer>
+      </div>
+    </aside>
+  </main>
 </body>
+
 </html>
